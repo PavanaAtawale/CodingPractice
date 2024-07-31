@@ -29,6 +29,8 @@ public class DuplicateInteger {
     public void test() {
         int[] nums = {1,2,3,3};
         assertEquals(hasDuplicate(nums), true);
+        nums[3] = 4;
+        assertEquals(hasDuplicate(nums), false);
         
     }
 }
